@@ -31,10 +31,18 @@ int main(){
     // // x = x+1;
     // ref_increment(x);
     // std::cout << x << std::endl;
-    std::vector<int> vec01 = {12,14,15,32};
-    int x = 100;
-    
-    std::cout<< contains(vec01, x) <<std::endl;
+    std::vector<int> vec01 = {2,4,6,7};
+   
+
+    int n = 10;
+    int i = 1;
+    int sum = 0;
+    bool k = false;
+    while(i<n){
+        k = contains(vec01, i);
+        std::cout << "current num:  "<< i << " in vec01? "<<k << std::endl;
+        i = i+1;
+    }
 
     return 0;
     }
